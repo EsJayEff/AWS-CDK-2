@@ -9,11 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "types": "./index.d.ts",
   "dependencies": {
-    "aws-sdk": "^2.1450.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.5.9"
+    "aws-sdk": "^2.1453.0"
   }
 }

@@ -1,0 +1,27 @@
+input ProductInput {
+  p_name: String!
+  price: Int!
+}
+
+input ProductUpdate {
+  id: String!
+  price: Int!
+  p_name:String!
+}
+
+type Product {
+  id: String!
+  p_name: String!
+  price: Int!
+}
+
+type Query {
+  showProduct: String
+}
+
+type Mutation {
+  addProduct(product: ProductInput!): Product
+  deleteProduct(productId:String!):String
+  getOneProduct(productId:String!):String
+  updateProduct(product: ProductUpdate!):String
+}

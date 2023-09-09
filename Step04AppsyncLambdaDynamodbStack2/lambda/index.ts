@@ -68,6 +68,8 @@ exports.handler = async (event: AppSyncEvent) => {
     return "Deleted";
   } 
 
+
+  
   else if (event.info.fieldName == "updateProduct") {
 
     const params = {

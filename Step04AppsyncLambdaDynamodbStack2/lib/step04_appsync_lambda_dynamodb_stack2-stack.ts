@@ -80,6 +80,7 @@ export class Step04AppsyncLambdaDynamodbStack2Stack extends cdk.Stack {
     });
    
     
+    
 
 
 
