@@ -22,5 +22,4 @@ type Query {
 type Mutation {
   addProduct(product: ProductInput!): Product
   deleteProduct(productId:String!):String
-  updateProduct(product: ProductUpdate!): String
 }

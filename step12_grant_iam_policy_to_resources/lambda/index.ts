@@ -84,7 +84,7 @@ exports.handler = async (event: AppSyncEvent) => {
     const data = await documentClient.update(params).promise();
     console.log("After Updating= ", data);
     return "Data Has been Updated"
-  }   
+  }
   else {
     return "Not Found";
   }

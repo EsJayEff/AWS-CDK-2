@@ -18,18 +18,6 @@ type Product = {
   price: Number;
 };
 
-// type Params = {
-//   TableName: string | undefined | any,
-//   Key: any,
-//   ExpressionAttributeValues: any,
-//   ExpressionAttributeNames: any,
-//   UpdateExpression: string,
-//   ReturnValues: string
-// }
-
-
-
-
 
 exports.handler = async (event: AppSyncEvent) => {
  
@@ -41,10 +29,6 @@ exports.handler = async (event: AppSyncEvent) => {
     return data.Items;
   } 
   
-//  if (event.info.fieldName == "welcome"){
-//  return "Hello World";
-//  }
-
   else if (event.info.fieldName == "addProduct") {
     event.arguments.product.id = "Key-" + Math.random();
     const params = {
@@ -74,12 +58,6 @@ exports.handler = async (event: AppSyncEvent) => {
 
     const params = {
       TableName: process.env.TABLE_NAME || "",
-      // Key: 
-      // {
-      //   id: event.arguments.product.id,
-      //   name:event.arguments.product.name,
-      //   price:event.arguments.product.price,
-      // },
       Key: event.arguments.product,
     };
 
