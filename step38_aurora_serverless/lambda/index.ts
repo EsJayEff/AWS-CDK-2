@@ -32,7 +32,7 @@ import {
       let resultsa = await mysql.query(
         // "CREATE TABLE IF NOT EXISTS new (task_id INT AUTO_INCREMENT, description TEXT, PRIMARY KEY (task_id))"
         // "insert into new (task_id, description) values(20,'complete the project')"
-        "SELECT * FROM new"
+        // "SELECT * FROM new"
       );
   
       console.log(resultsa, "results from database");

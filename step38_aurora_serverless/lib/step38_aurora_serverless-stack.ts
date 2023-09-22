@@ -59,7 +59,7 @@ export class Step38AuroraServerlessStack extends cdk.Stack {
       timeout: cdk.Duration.minutes(1),
       // layers:[lambdaLayer],
       vpc,
-      role,
+      // role,
       environment: {
         INSTANCE_CREDENTIALS: `${
           SM.Secret.fromSecretAttributes(this, "sec-arn", { secretCompleteArn: secretARN })
